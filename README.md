@@ -2,7 +2,7 @@
 
 A hubot script to create funny memes based on your own image templates
 
-## setup
+## Setup
 
 First create in your hubot location a directory to put there your meme template images and it's definition. You can also use the examples directory content included in this project as base.
 You'll need also installed imagemagick and ghostscript fonts in your system.
@@ -28,7 +28,7 @@ Lastly add it to the list of external dependencies in `external-scripts.json`:
 
 ## Current commands
 
-    - memegen <template id> <phrase> - Create a meme using the requested template and phrase
+    memegen <template id> <phrase> - Create a meme using the requested template and phrase
 
 ## Example
-    - hubot memegen dog Shuch Hubot!
+    hubot memegen dog Shuch Hubot!
