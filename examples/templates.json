@@ -1,0 +1,14 @@
+{
+   "dog": {
+       "file": "examples/dog.png",
+       "w": 500,
+       "h": 150,
+       "orientation": "south",
+       "marginY": 15
+   },
+   "jesus": {
+       "file": "examples/templates/jesus.png",
+       "w": 350,
+       "h": 150
+   }
+}
