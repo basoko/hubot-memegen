@@ -1,7 +1,7 @@
 {
   "name": "hubot-memegen",
   "description": "A hubot script to create funny memes based on your own image templates",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "David Basoco <basoko@gmail.com>",
   "license": "MIT",
   "keywords": [
