@@ -31,4 +31,4 @@ Lastly add it to the list of external dependencies in `external-scripts.json`:
     memegen <template id> <phrase> - Create a meme using the requested template and phrase
 
 ## Example
-    hubot memegen dog Shuch Hubot!
+    hubot memegen dog Such Hubot!
