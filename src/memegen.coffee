@@ -107,6 +107,6 @@ module.exports = (robot) ->
     removeFile: () =>
       fs.unlink(@filename, (err) => logger.debug err)
 
-  robot.respond /memegen (.*?) ([a-zA-Z\d].*)$/i, (msg) ->
+  robot.respond /memegen (.*?) (.*)$/i, (msg) ->
     meme = new Meme apikey, msg
     meme.generate()
