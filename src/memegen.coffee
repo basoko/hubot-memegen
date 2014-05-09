@@ -11,6 +11,7 @@
 #
 # Commands:
 #   hubot memegen <template_id> <phrase> - Create the meme usign the template_id and the phrase given
+#   hubot memegen list templates - List available templates
 #
 # Author:
 #   basoko
@@ -110,3 +111,9 @@ module.exports = (robot) ->
   robot.respond /memegen (.*?) (.*)$/i, (msg) ->
     meme = new Meme apikey, msg
     meme.generate()
+
+  robot.respond /memegen list templates$/i, (msg) ->
+    response = 'Current templates available:\n'
+    response += "#{name} (#{value.file})\n" for name, value of templates
+
+    msg.send response
