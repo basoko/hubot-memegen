@@ -4,7 +4,7 @@
 export NODE_ENV=development
 
 # Load environment specific environment variables
-if [ -f .env ]; then 
+if [ -f .env ]; then
   source .env
 fi
 
@@ -16,3 +16,7 @@ npm install
 
 # Make sure coffee and mocha are on the path
 export PATH="node_modules/.bin:$PATH"
+
+# Memegen variables
+export HUBOT_MEMEGEN_IMAGE_BIN_APIKEY="fakeapiid"
+export HUBOT_MEMEGEN_TEMPLATES_FILE="examples/templates.json"
