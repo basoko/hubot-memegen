@@ -2,6 +2,8 @@
 
 A hubot script to create funny memes based on your own image templates
 
+[![Build Status](https://api.travis-ci.org/basoko/hubot-memegen.png?branch=master)](https://travis-ci.org/basoko/hubot-memegen)
+
 ## Setup
 
 First create in your hubot location a directory to put there your meme template images and it's definition. You can also use the examples directory content included in this project as base.
@@ -29,6 +31,14 @@ Lastly add it to the list of external dependencies in `external-scripts.json`:
 ## Current commands
 
     memegen <template id> <phrase> - Create a meme using the requested template and phrase
+    memegen list templates - List available templates
 
 ## Example
     hubot memegen dog Such Hubot!
+
+    hubot list templates
+Will output:
+
+    Current templates available:
+    dog (memegen/dog.jpg)
+    jesus (memegen/jesus.jpg)
